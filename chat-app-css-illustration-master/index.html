@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style/style.css">
+
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -25,32 +26,35 @@
         <div class="phone-bubble"></div>
 
         <!-- Application Header -->
-        <header>
+        <header class="header">
+          <span class="back"><</span>
           <img src="images/avatar.jpg" alt="">
           Samuel Green
           Available to Walk
+          <span class="dots">...</span>
         </header>
         
         <!-- Conversation -->
-        <div class="message-received">That sounds great. I’d be happy with that.</div>
-        <div class="message-received">  Could you send over some pictures of your dog, please?</div>
-        
-        <img class="picture-sent" src="images/dog-image-1.jpg" alt=""><img class="picture-sent" src="images/dog-image-2.jpg" alt=""><img class="picture-sent" src="images/dog-image-3.jpg" alt="">
+        <div class="conversation-bg">
+          <div class="message-received message">That sounds great. I’d be happy with that.</div>
+          <div class="message-received message">  Could you send over some pictures of your dog, please?</div>
+          
+          <img class="picture-sent" src="images/dog-image-1.jpg" alt=""><img class="picture-sent" src="images/dog-image-2.jpg" alt=""><img class="picture-sent" src="images/dog-image-3.jpg" alt="">
 
-        <div class="message-sent">  Here are a few pictures. She’s a happy girl!</div>
-        <div class="message-sent">Can you make it?</div>
-        <div class="message-received">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+          <div class="message-sent message">  Here are a few pictures. She’s a happy girl!</div>
+          <div class="message-sent message">Can you make it?</div>
+          <div class="message-received message">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
 
-        <!-- Price CTA -->
-        <div class="price-cta">30 minute walk
-          $29</div>
-        <div class="price-cta">1 hour walk
-          $49</div>
+          <!-- Price CTA -->
+          <div class="price-cta"><div class="circle"></div>30 minute walk
+          <span class="price">$29</span>  </div>
+          <div class="price-cta"><div class="circle"></div> 1 hour walk
+          <span class="price">$49</span></div>
 
-        <!-- Typing Box   -->
-        <div class="typing-box">Type a message…<span class="send-button">></span></div>
-
-     </section>
+          <!-- Typing Box   -->
+          <div class="typing-box">Type a message…<span class="send-button">></span></div>
+        </div>
+      </section>
     </main>
 
     <!-- Presentation -->

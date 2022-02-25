@@ -1,0 +1,8 @@
+html{
+    font-size: 100%; //to let user easily zoom
+    box-sizing: border-box; //padding and borders will be included in the final width and height
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
