@@ -18,49 +18,54 @@
   <body>
 
     <!-- Phone -->
-    <main> 
+    <main class="phone"> 
       <!-- Phone screen -->
-      <section>
+      <section class="phone__screen">
 
         <!-- Phone Bubble -->
-        <div class="phone-bubble"></div>
+        <div class="phone__bubble"></div>
 
         <!-- Application Header -->
         <header class="header">
-          <span class="back"><</span>
-          <img src="images/avatar.jpg" alt="">
+          <span class="header__back-button"><</span>
+          <img class="header__avatar" src="images/avatar.jpg" alt="">
           Samuel Green
           Available to Walk
-          <span class="dots">...</span>
+          <span class="header__dots">...</span>
         </header>
         
         <!-- Conversation -->
-        <div class="conversation-bg">
-          <div class="message-received message">That sounds great. I’d be happy with that.</div>
-          <div class="message-received message">  Could you send over some pictures of your dog, please?</div>
+        <div class="conversation">
+          <div class="conversation__message conversation__message--received">That sounds great. I’d be happy with that.</div>
+          <div class="conversation__message conversation__message--received">  Could you send over some pictures of your dog, please?</div>
           
-          <img class="picture-sent" src="images/dog-image-1.jpg" alt=""><img class="picture-sent" src="images/dog-image-2.jpg" alt=""><img class="picture-sent" src="images/dog-image-3.jpg" alt="">
+          <!-- Pictures -->
+          <div class="conversation__pictures">
+            <img class="conversation__picture-sent" src="images/dog-image-1.jpg" alt="">
+            <img class="conversation__picture-sent" src="images/dog-image-2.jpg" alt="">
+            <img class="conversation__picture-sent" src="images/dog-image-3.jpg" alt="">
+          </div>
 
-          <div class="message-sent message">  Here are a few pictures. She’s a happy girl!</div>
-          <div class="message-sent message">Can you make it?</div>
-          <div class="message-received message">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+          <div class="conversation__message conversation__message--sent">  Here are a few pictures. She’s a happy girl!</div>
+          <div class="conversation__message conversation__message--sent">Can you make it?</div>
+          <div class="conversation__message conversation__message--received">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
 
           <!-- Price CTA -->
-          <div class="price-cta"><div class="circle"></div>30 minute walk
-          <span class="price">$29</span>  </div>
-          <div class="price-cta"><div class="circle"></div> 1 hour walk
-          <span class="price">$49</span></div>
+          <div class="conversation__cta"><div class="circle"></div>30 minute walk
+          <span class="conversation__cta--price">$29</span>  </div>
+          <div class="conversation__cta"><div class="circle"></div> 1 hour walk
+          <span class="conversation__cta--price">$49</span></div>
 
           <!-- Typing Box   -->
-          <div class="typing-box">Type a message…<span class="send-button">></span></div>
+          <div class="conversation__typing-box">Type a message…<span class="conversation__typing-box--send-button">></span></div>
         </div>
       </section>
     </main>
 
     <!-- Presentation -->
-    <section>
-      <h1>Simple booking</h1>
-      <p>
+    <section class="presentation-text">
+      <h1 class="presentation-text__title">Simple booking</h1>
+      <p class="presentation-text--p">
       Stay in touch with our dog walkers through the chat interface. This makes it easy to 
       discuss arrangements and make bookings. Once the walk has been completed you can rate 
       your walker and book again all through the chat.
