@@ -91,9 +91,37 @@ body {
   left: 12.5vw;
   top: 10vh;
   width: calc(100vw - 25vw);
-  background-color: darkgrey;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 15px;
 }
 
 /**** Phone Screen ****/
+.phone__screen {
+  position: relative;
+}
+
 /**** Phone Bubble ****/
+.phone__bubble {
+  width: 30vw;
+  position: absolute;
+  width: 50%;
+  height: 2.5vh;
+  background-color: white;
+  left: 25%;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.header {
+  background-image: -webkit-gradient(linear, right top, left top, from(#e942ff), to(#8838ff));
+  background-image: linear-gradient(to left, #e942ff, #8838ff);
+  border-radius: 2rem 2rem 0.7rem 0.7rem;
+}
+
+.header__avatar {
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 30px;
+}
 /*# sourceMappingURL=style.css.map */
