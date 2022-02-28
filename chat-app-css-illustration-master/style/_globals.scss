@@ -39,6 +39,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: 'Rubik', sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
@@ -86,14 +87,13 @@ body{
 /**** Phone ****/
 .phone{
   position: relative;
-  left: 12.5vw;
+  left: calc(95px / 2);
   top:10vh;
-  width:calc(100vw - 25vw);
+  width:280px;
   background-color: white;
   border-radius: 2rem;
   padding: 15px;
 }
-
 
 /**** Phone Screen ****/
 .phone__screen{
@@ -115,10 +115,72 @@ body{
 
 .header{
   background-image: linear-gradient(to left, hsl(293, 100%, 63%) , hsl(264, 100%, 61%));
-  border-radius: 2rem 2rem 0.7rem 0.7rem;
+  border-radius: 1.5rem 1.5rem 0.7rem 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__back-button{
+
+  }
+  &__container{
+    display: flex;
+    align-items: center;
+    margin: 30px 0 10px 10px;
+  }
+  &__container>*{
+    margin-left: 7px;
+  }
   &__avatar{
     border-radius: 50%;
     border: 2px solid white;
-    width: 30px;
+    width: 27px;
+    height: 27px;
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+  }
+  &__text h2{
+    font-size: 12px;
+    opacity: 0.8;
+    font-weight: 500;
+  }
+  &__text p{
+    font-size: 10px;
+    opacity: 0.5;
+  }
+  &__text-white{
+    color: white;
+  }
+  &__dots{
+    transform: rotate(90deg);
+    margin-right: 10px;
+  }
 }
+
+.conversation{
+  background-color: lightgrey;
+  padding: 10px;
+  &__message{
+    max-width: 60%;
+    font-size: 11px;
+    margin-bottom: 10px;
+    &--received{
+      background-color: grey;
+    }
+    &--sent{
+      background-color: pink;
+    }
+  }
+  &__pictures{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+  }
+  &__picture-sent{
+    display: inline-block;
+    width: 40px;
+    border-radius: 10px;
+    margin-left: 5px;
+  }
 }
