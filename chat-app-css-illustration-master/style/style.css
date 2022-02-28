@@ -90,11 +90,11 @@ body {
 .phone {
   position: relative;
   left: calc(95px / 2);
-  top: 10vh;
   width: 280px;
   background-color: white;
   border-radius: 2rem;
   padding: 15px;
+  margin: 50px 0 50px 0;
 }
 
 /**** Phone Screen ****/
@@ -216,5 +216,38 @@ body {
   width: 40px;
   border-radius: 10px;
   margin-left: 5px;
+}
+
+.conversation__typing-box {
+  width: 100%;
+  background-color: white;
+  border-radius: 50px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.conversation__message-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.presentation-text {
+  float: none;
 }
 /*# sourceMappingURL=style.css.map */
