@@ -89,11 +89,11 @@ body {
 /**** Phone ****/
 .phone {
   position: relative;
-  left: calc(95px / 2);
-  width: 280px;
+  left: calc(135px / 2);
+  width: 240px;
   background-color: white;
   border-radius: 2rem;
-  padding: 15px;
+  padding: 10px;
   margin: 50px 0 50px 0;
 }
 
@@ -182,22 +182,27 @@ body {
 }
 
 .conversation {
-  background-color: lightgrey;
+  background-color: #f5f3f7;
   padding: 10px;
 }
 
 .conversation__message {
-  max-width: 60%;
+  width: 70%;
   font-size: 11px;
+  font-weight: 500;
   margin-bottom: 10px;
+  padding: 10px;
 }
 
 .conversation__message--received {
-  background-color: grey;
+  background-color: #eee6f4;
+  color: #9241c8;
+  border-radius: 15px 15px 15px 5px;
 }
 
 .conversation__message--sent {
-  background-color: pink;
+  background-color: white;
+  color: #6e5d7e;
 }
 
 .conversation__pictures {

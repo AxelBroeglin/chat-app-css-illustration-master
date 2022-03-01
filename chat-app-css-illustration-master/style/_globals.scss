@@ -87,11 +87,11 @@ body{
 /**** Phone ****/
 .phone{
   position: relative;
-  left: calc(95px / 2);
-  width:280px;
+  left: calc(135px / 2);
+  width:240px;
   background-color: white;
   border-radius: 2rem;
-  padding: 15px;
+  padding: 10px;
   margin: 50px 0 50px 0;
 }
 
@@ -155,17 +155,22 @@ body{
   } 
 }
 .conversation{
-  background-color: lightgrey;
+  background-color: hsl(270, 20%, 96%);
   padding: 10px;
   &__message{
-    max-width: 60%;
+    width: 70%;
     font-size: 11px;
+    font-weight: 500;
     margin-bottom: 10px;
+    padding: 10px;
     &--received{
-      background-color: grey;
+      background-color: hsl(272, 41%, 93%);
+      color: hsl(276, 55%, 52%);
+      border-radius: 15px 15px 15px 5px;
     }
     &--sent{
-      background-color: pink;
+      background-color: hsl(0, 0%, 100%);
+      color: hsl(271, 15%, 43%);
       }
     }
   &__pictures{
