@@ -80,7 +80,7 @@ select {
 
 /**** Body ****/
 body{
-  background-color: lightgrey;
+  background-color: hsl(270, 20%, 96%);
   position: absolute;
 }
 
@@ -115,7 +115,7 @@ body{
 
 .header{
   background-image: linear-gradient(to left, hsl(293, 100%, 63%) , hsl(264, 100%, 61%));
-  border-radius: 1.5rem 1.5rem 0.7rem 0.7rem;
+  border-radius: 1.5rem 1.5rem 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -157,20 +157,23 @@ body{
 .conversation{
   background-color: hsl(270, 20%, 96%);
   padding: 10px;
+  position: relative;
+  border-radius: 0 0 15px 15px;
   &__message{
     width: 70%;
-    font-size: 11px;
+    font-size: 9px;
     font-weight: 500;
-    margin-bottom: 10px;
-    padding: 10px;
+    margin-bottom: 7px;
+    padding: 7px;
     &--received{
       background-color: hsl(272, 41%, 93%);
       color: hsl(276, 55%, 52%);
-      border-radius: 15px 15px 15px 5px;
+      border-radius: 10px 10px 10px 5px;
     }
     &--sent{
       background-color: hsl(0, 0%, 100%);
       color: hsl(271, 15%, 43%);
+      border-radius: 10px 10px 5px 10px;
       }
     }
   &__pictures{
@@ -199,6 +202,19 @@ body{
   flex-direction: column;
   align-items: flex-end;
 }
+
+.conversation-cta{
+  background-image: linear-gradient(to right, hsl(293, 100%, 63%) , hsl(264, 100%, 61%));
+
+  &__radio::after{
+    //background-color: rgb(131, 27, 27);
+
+  }
+}
 .presentation-text{
   float: none;
 }
+
+.conversation-cta input[type='radio']:before {
+  border: 1px solid red;
+  }

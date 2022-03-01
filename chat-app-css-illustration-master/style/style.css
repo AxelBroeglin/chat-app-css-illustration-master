@@ -82,7 +82,7 @@ select {
 
 /**** Body ****/
 body {
-  background-color: lightgrey;
+  background-color: #f5f3f7;
   position: absolute;
 }
 
@@ -117,7 +117,7 @@ body {
 .header {
   background-image: -webkit-gradient(linear, right top, left top, from(#e942ff), to(#8838ff));
   background-image: linear-gradient(to left, #e942ff, #8838ff);
-  border-radius: 1.5rem 1.5rem 0.7rem 0.7rem;
+  border-radius: 1.5rem 1.5rem 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,25 +184,28 @@ body {
 .conversation {
   background-color: #f5f3f7;
   padding: 10px;
+  position: relative;
+  border-radius: 0 0 15px 15px;
 }
 
 .conversation__message {
   width: 70%;
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 500;
-  margin-bottom: 10px;
-  padding: 10px;
+  margin-bottom: 7px;
+  padding: 7px;
 }
 
 .conversation__message--received {
   background-color: #eee6f4;
   color: #9241c8;
-  border-radius: 15px 15px 15px 5px;
+  border-radius: 10px 10px 10px 5px;
 }
 
 .conversation__message--sent {
   background-color: white;
   color: #6e5d7e;
+  border-radius: 10px 10px 5px 10px;
 }
 
 .conversation__pictures {
@@ -252,7 +255,16 @@ body {
           align-items: flex-end;
 }
 
+.conversation-cta {
+  background-image: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background-image: linear-gradient(to right, #e942ff, #8838ff);
+}
+
 .presentation-text {
   float: none;
+}
+
+.conversation-cta input[type='radio']:before {
+  border: 1px solid red;
 }
 /*# sourceMappingURL=style.css.map */
