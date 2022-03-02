@@ -94,7 +94,9 @@ body {
   background-color: white;
   border-radius: 2rem;
   padding: 10px;
-  margin: 50px 0 50px 0;
+  margin: 50px 0 0 0;
+  -webkit-box-shadow: 13px 14px 40px 7px rgba(0, 0, 0, 0.32);
+  box-shadow: 13px 14px 40px 7px rgba(0, 0, 0, 0.32);
 }
 
 /**** Phone Screen ****/
@@ -307,5 +309,25 @@ body {
 .conversation-cta__price {
   color: white;
   font-weight: 500;
+}
+
+.presentation-text {
+  margin-top: 20px;
+  text-align: center;
+  padding: 30px;
+  line-height: 1.5;
+}
+
+.presentation-text__title {
+  color: #240e2e;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.presentation-text__p {
+  font-weight: 400;
+  color: #9e9e9e;
+  opacity: 0.8;
 }
 /*# sourceMappingURL=style.css.map */

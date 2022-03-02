@@ -92,7 +92,9 @@ body{
   background-color: white;
   border-radius: 2rem;
   padding: 10px;
-  margin: 50px 0 50px 0;
+  margin: 50px 0 0 0;
+  -webkit-box-shadow: 13px 14px 40px 7px rgba(0,0,0,0.32); 
+    box-shadow: 13px 14px 40px 7px rgba(0,0,0,0.32);
 }
 
 /**** Phone Screen ****/
@@ -240,4 +242,19 @@ body{
   }
 }
 .presentation-text{
+  margin-top: 20px;
+  text-align: center;
+  padding: 30px;
+  line-height: 1.5;
+  &__title{
+    color: rgb(36, 14, 46);
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  &__p{
+    font-weight: 400;
+    color: hsl(0, 0%, 62%);
+    opacity: 0.8;
+  }
 }
