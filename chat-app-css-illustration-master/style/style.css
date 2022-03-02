@@ -242,6 +242,31 @@ body {
           justify-content: space-between;
 }
 
+.conversation__typing-box--send-button {
+  color: white;
+  background-color: #15091d;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.conversation__typing-box p {
+  color: #cac9ca;
+  margin-left: 20px;
+  font-size: 10px;
+}
+
 .conversation__message-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,13 +283,29 @@ body {
 .conversation-cta {
   background-image: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
   background-image: linear-gradient(to right, #e942ff, #8838ff);
+  padding: 5px;
+  width: 80%;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.presentation-text {
-  float: none;
+.conversation-cta__label {
+  font-size: 10px;
+  opacity: 0.5;
+  color: white;
+  margin-left: 5px;
 }
 
-.conversation-cta input[type='radio']:before {
-  border: 1px solid red;
+.conversation-cta__price {
+  color: white;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */
