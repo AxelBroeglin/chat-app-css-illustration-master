@@ -258,3 +258,26 @@ body{
     opacity: 0.8;
   }
 }
+
+.bg{
+  position: absolute;
+  z-index: 0;
+  width: 50vw;
+  height: 80vh;
+  border-radius:100% 0% 100% 0% / 0% 0% 50% 100%;
+  background-image: linear-gradient(to bottom, hsl(293, 100%, 63%) , hsl(264, 100%, 61%));
+
+}
+.bg2{
+  display:none;
+}
+
+//BG 2 for responsive
+//.bg2{
+//   position: absolute;
+//   background-color: grey;
+//   z-index: 0;
+//   width: 5vw;
+//   height: 8vh;
+// }
+
