@@ -344,4 +344,25 @@ body {
 .bg2 {
   display: none;
 }
+
+@media only screen and (min-width: 900px) {
+  .bg {
+    left: -40vh;
+    width: 50vw;
+    height: 90vh;
+    border-radius: 0% 0% 100% 100% / 100% 100% 100% 100%;
+  }
+  .container-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60vw;
+    left: 30%;
+    position: relative;
+  }
+  .phone {
+    height: 520px;
+    width: 500px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
