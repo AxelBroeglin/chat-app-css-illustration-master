@@ -279,23 +279,19 @@ body{
     border-radius:0% 0% 100% 100% / 100% 100% 100% 100%;
   }
   .container-flex{
+    top:15vh;
     display: flex;
-    width: 60vw;
-    left: 30%;
+    width: 80vw;
+    left: 10vw;
+    align-items: center;
     position: relative;
+    justify-content: space-evenly;
   }
   .phone{
-    height:520px;
-    width:500px;
+  margin: 0;
+  left:0;
+  }
+  .presentation-text{
+    width: 50%;
   }
 }
-
-//BG 2 for responsive
-//.bg2{
-//   position: absolute;
-//   background-color: grey;
-//   z-index: 0;
-//   width: 5vw;
-//   height: 8vh;
-// }
-
