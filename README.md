@@ -40,6 +40,10 @@ It took me longer than expected to complete this challenge. I don't think I corr
 Project is:  _complete_ .
 
 
+## Room for improvement
+A better appreciation of the time needed to complete this kind of challenge would be better.
+
+
 ## Acknowledgements
 - Many thanks to Frontend Mentor
 
